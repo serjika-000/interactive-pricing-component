@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    background:white url("images/bg-pattern.svg") no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    font-family: "Manrope", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+header{
+    background:url("images/pattern-circles.svg") no-repeat center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+.mainHead{
+    font-family: 800;
+    font-size: 28px;
+}
+
+.subHead{
+    font-size: 15px;
+    color:#848EAD;
+    margin-top: 15px;
+}
+
+.card{
+    background-color: rgb(252, 249, 249);
+    height: 390px;
+    width: 545px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partOne{
+    width: 445px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.pageView{
+    color: #848EAD;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.priceMonth{
+    display: flex;
+    align-items: center;
+}
+
+.price{
+    font-size: 40px;
+    font-weight: bolder;
+    color: #293356;
+}
+
+.month{
+    color: #848EAD;
+    margin-left: 2px;
+}
+
+.partTwo{
+    width: 445px;
+    margin-top: 30px;
+}
+
+.progress-bar{
+    position: relative;
+    height: 20px;
+}
+
+.progress-bar input[type="range"]{
+    width: 100%;
+}
+
+.myrange{
+    appearance: none;
+    background: #A4F3EB;
+    height: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.myrange::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    width: 40px;
+    height: 40px;
+    background-image: url(images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #10D8C4;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.myrange::-webkit-slider-thumb:hover{
+    box-shadow: 0px 0px 10px #10D8C4;
+
+}
+
+.partThree{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* margin-left: 154px; */
+    margin: 0 auto;
+    margin-top: 45px;
+}
+
+.partThree p{
+    color: #848EAD;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.monthly{
+    margin-right: 16px;
+}
+
+.yearly{
+    margin-right: 10px;
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 22px;
+    margin-right: 12px;
+}
+
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#CFD8EF;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+
+}
+
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 2px;
+    bottom: 4.5px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked + .slider{
+    background-color: #10D8C4;
+}
+
+input:focus + .slider{
+    background-color: #10D8C4;
+}
+
+input:checked + .slider:before{
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+
+}
+
+.slider.round{
+    border-radius: 34px;
+}
+
+.slider.round:before{
+    border-radius: 50%;
+}
+
+.discount{
+    background-color: #FEEDE8;
+    color: #FF8D68;
+    font-size: 10px;
+    margin-right: 20px;
+    width: 75px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discountNumber{
+    margin-right: 3px;
+}
+
+.partFour{
+    border-top: 2px solid#ECF0FB;
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.checkOne, .checkTwo, .checkThree{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.checkOne img, .checkTwo img, .checkThree img{
+    margin-right: 14px;
+    width: 9px;
+    height: 9px;
+}
+
+.button{
+    font-size: 12px;
+    width: 170px;
+    height: 38px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #293356;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        -ms-overflow-style: none;  
+        scrollbar-width: none;  
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        
+
+    }
+    
+    header{
+        margin-top: 56px;
+        margin-bottom: 30px;
+    }
+
+    .mainHead{
+        font-size: 20px;
+    }
+
+    .subHead{
+        font-size: 13px;
+        width: 170px;
+        line-height: 22px;
+        margin-top: 8px;
+    }
+
+    .card{
+        width: 330px;
+        height: 480px;
+    }
+
+    .partOne, .partTwo, .partFour{
+        width: 272px;
+    }
+
+    .partOne{
+        margin-top: 35px;
+        flex-direction: column;
+    }
+
+    .pageView{
+        font-size: 12px;
+        margin-bottom: 90px;
+    }
+
+    .price{
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    .month{
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .partTwo{
+        position: relative;
+        bottom: 128px;
+    }
+
+    .myrange{
+        height: 8px;
+    }
+
+    .partThree{
+        display: flex;
+        align-items:center;
+        margin-top: 20px;
+        font-size: 12px;
+        
+    }
+    
+    .monthly{
+        margin-right: 10px;
+    }
+
+    .discount{
+        width: 30px;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        margin-left: 10px;
+    }
+
+    .discount .discountWord{
+        display: none;
+    }
+
+    .partFour{
+        flex-direction: column;
+    }
+    
+   
+
+   
+
+}

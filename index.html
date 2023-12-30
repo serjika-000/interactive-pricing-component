@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div class="mainHead">Simple, traffic-based pricing</div>
+        <div class="subHead">Sign-up for our 30-day trial. No credit card required. </div>
+    </header>
+
+    <div class="card">
+        <div class="partOne">
+            <div class="pageView"><span class="number" id="pageviews-count">100K</span>PAGEVIEWS</div>
+            <div class="priceMonth">
+                <div  class="price">$ <span class="amount" id="monthlyPrice">16.00</span></div>
+                <div class="month" id="month">/ month</div>
+            </div>
+        </div>
+
+        <div class="partTwo">
+            <div class="progress-bar">
+                <input type="range" id="range" class="myrange">
+            </div>
+        </div>
+
+        <div class="partThree">
+            <p class="monthly">Monthly Billing</p>
+            <div class="toogle">
+                <label class="switch">
+                    <input type="checkbox">
+                <span class="slider round" id="switcher"></span>
+                </label>
+            </div>
+            <p class="yearly">Yearly Billing</p>
+            <div class="discount"><span class="discountNumber">25%</span> <span class="discountWord">discount</span></div>
+        </div>
+        
+        <div class="partFour">
+            <div class="checkMark">
+                <div class="checkOne">
+                    <img src="images/icon-check.svg" alt="">
+                    <p>Unlimited websites</p>
+                </div>
+                <div class="checkTwo">
+                    <img src="images/icon-check.svg" alt="">
+                    <p>100% data ownership </p>
+                </div>
+                <div class="checkThree">
+                    <img src="images/icon-check.svg" alt="">
+                    <p>Email reports</p>
+                </div>
+            </div>
+            <button class="button">Start my trial</button>
+        </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
